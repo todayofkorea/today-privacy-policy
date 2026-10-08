@@ -1,358 +1,612 @@
+```html
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TODay 개인정보처리방침</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   "Noto Sans KR", Arial, sans-serif;
-      line-height: 1.7;
-      color: #222;
-      background: #f7f7f7;
-      margin: 0;
-      padding: 0;
-    }
+    <title>개인정보처리방침 | TODay</title>
 
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 40px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    h1 {
-      margin-top: 0;
-      font-size: 30px;
-      border-bottom: 2px solid #222;
-      padding-bottom: 15px;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Noto Sans KR",
+                "Apple SD Gothic Neo",
+                sans-serif;
+            line-height: 1.75;
+            color: #1a1a2e;
+            background: #f7f8fa;
+        }
 
-    h2 {
-      margin-top: 35px;
-      font-size: 21px;
-      border-left: 4px solid #333;
-      padding-left: 10px;
-    }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px 50px;
+        }
 
-    h3 {
-      margin-top: 25px;
-      font-size: 18px;
-    }
+        header {
+            text-align: center;
+            padding: 32px 0 26px;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 24px;
+        }
 
-    p {
-      margin: 10px 0;
-    }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+            font-weight: 800;
+            color: #111;
+        }
 
-    ul {
-      padding-left: 25px;
-    }
+        .subtitle {
+            margin: 0;
+            font-size: 15px;
+            color: #666;
+        }
 
-    li {
-      margin: 6px 0;
-    }
+        .last-updated {
+            margin: 8px 0 0;
+            font-size: 13px;
+            color: #999;
+        }
 
-    .info {
-      background: #f5f5f5;
-      padding: 18px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
+        section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
 
-    .notice {
-      background: #fff8e1;
-      padding: 18px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
+        h2 {
+            margin: 0 0 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 19px;
+            font-weight: 750;
+            color: #111;
+        }
 
-    a {
-      color: #1565c0;
-      text-decoration: none;
-    }
+        h3 {
+            margin: 22px 0 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #29293d;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        p {
+            margin: 0 0 12px;
+        }
 
-    footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      color: #666;
-      font-size: 14px;
-    }
+        ul {
+            margin: 0 0 14px;
+            padding-left: 22px;
+        }
 
-    @media (max-width: 600px) {
-      .container {
-        margin: 0;
-        padding: 25px 20px;
-        border-radius: 0;
-      }
+        li {
+            margin-bottom: 7px;
+        }
 
-      h1 {
-        font-size: 25px;
-      }
+        .info-box {
+            padding: 17px;
+            background: #f5f6f8;
+            border-radius: 9px;
+            margin: 16px 0;
+        }
 
-      h2 {
-        font-size: 19px;
-      }
-    }
-  </style>
+        .notice {
+            padding: 16px;
+            background: #fff8e1;
+            border-left: 4px solid #f0b400;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+
+        .privacy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .privacy-table th,
+        .privacy-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .privacy-table th {
+            background: #f6f6f6;
+            font-weight: 700;
+        }
+
+        a {
+            color: #1769aa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 22px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 12px 40px;
+            }
+
+            section {
+                padding: 20px 17px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .privacy-table {
+                font-size: 13px;
+            }
+
+            .privacy-table th,
+            .privacy-table td {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-  <h1>TODay 개인정보처리방침</h1>
-
-  <p>
-    <strong>TODay</strong>(이하 "앱")는 이용자의 개인정보를 중요하게 생각하며,
-    관련 법령 및 Google Play 정책을 준수하기 위해 개인정보처리방침을 안내합니다.
-  </p>
-
-  <div class="info">
-    <p><strong>앱 이름:</strong> TODay</p>
-    <p><strong>개발자:</strong> TODay</p>
-    <p><strong>문의 이메일:</strong>
-      <a href="mailto:todayofkorea@gmail.com">
-        todayofkorea@gmail.com
-      </a>
-    </p>
-    <p><strong>시행일:</strong> 2026년 10월 8일</p>
-  </div>
-
-
-  <h2>1. 개인정보처리방침의 목적</h2>
-
-  <p>
-    본 개인정보처리방침은 TODay가 제공하는 서비스 이용 과정에서
-    이용자의 정보가 어떻게 처리되는지 안내하기 위한 것입니다.
-  </p>
-
-  <p>
-    TODay는 서비스 제공에 필요한 범위 내에서 정보를 처리하며,
-    이용자의 개인정보를 관련 법령에서 정한 목적 이외의 용도로
-    이용하지 않습니다.
-  </p>
-
-
-  <h2>2. 처리하는 정보</h2>
-
-  <p>
-    TODay의 주요 기능 이용 과정에서 다음과 같은 정보가 이용자의
-    기기 또는 서비스에 입력될 수 있습니다.
-  </p>
-
-  <ul>
-    <li>생년월일</li>
-    <li>출생시간</li>
-    <li>성별 등 이용자가 직접 입력하는 사주 관련 정보</li>
-    <li>서비스 이용 과정에서 생성되는 사주·오행·궁합·타로 관련 결과</li>
-    <li>이용자가 저장하는 이미지 또는 콘텐츠</li>
-  </ul>
-
-  <p>
-    위 정보는 사주, 오행, 궁합, 타로 등의 서비스 기능을 제공하기 위한
-    목적으로 이용될 수 있습니다.
-  </p>
-
-
-  <h2>3. 정보의 이용 목적</h2>
-
-  <p>TODay는 다음과 같은 목적으로 정보를 이용합니다.</p>
-
-  <ul>
-    <li>사주 및 만세력 관련 서비스 제공</li>
-    <li>오행 분석 및 관련 콘텐츠 제공</li>
-    <li>궁합 및 타로 관련 기능 제공</li>
-    <li>서비스 결과의 표시 및 저장</li>
-    <li>이미지 및 콘텐츠 공유 기능 제공</li>
-    <li>서비스 품질 개선 및 앱 운영</li>
-    <li>광고 제공</li>
-    <li>인앱 결제 및 구독 서비스 제공</li>
-  </ul>
-
-
-  <h2>4. 기기 내 정보 저장</h2>
-
-  <p>
-    TODay는 일부 서비스 설정 및 이용자가 저장한 콘텐츠 등을
-    이용자의 기기에 저장할 수 있습니다.
-  </p>
-
-  <p>
-    이용자는 앱에서 제공하는 데이터 삭제 기능을 이용하여
-    앱에 저장된 관련 데이터를 삭제할 수 있습니다.
-  </p>
-
-
-  <h2>5. 광고 서비스</h2>
-
-  <p>
-    TODay는 광고 제공을 위해 Google Mobile Ads SDK 등
-    Google의 광고 관련 서비스를 사용할 수 있습니다.
-  </p>
-
-  <p>
-    광고 서비스 제공 과정에서 광고 식별자, 기기 및 앱 이용과 관련된
-    정보 등이 사용될 수 있으며, 해당 정보의 처리는 Google의
-    관련 정책에 따라 이루어질 수 있습니다.
-  </p>
-
-  <p>
-    광고 및 개인정보 보호와 관련한 자세한 사항은 Google의 관련
-    정책을 확인하시기 바랍니다.
-  </p>
-
-
-  <h2>6. 광고 개인정보 보호 및 동의</h2>
-
-  <p>
-    관련 법령 또는 서비스 환경에 따라 광고 및 개인정보 보호와 관련된
-    동의 절차가 제공될 수 있습니다.
-  </p>
-
-  <p>
-    이용자는 앱에서 제공되는 동의 화면을 통해 자신의 선택을
-    확인하거나 변경할 수 있습니다.
-  </p>
-
-
-  <h2>7. 인앱 결제 및 구독</h2>
-
-  <p>
-    TODay는 Google Play 결제 시스템을 이용하여 유료 기능 또는
-    구독 서비스를 제공할 수 있습니다.
-  </p>
-
-  <p>
-    결제 및 구독과 관련된 결제 정보는 Google Play의 결제 시스템을
-    통해 처리되며, TODay가 이용자의 카드번호 등 결제수단 정보를
-    직접 저장하지 않습니다.
-  </p>
-
-
-  <h2>8. 개인정보의 제3자 제공</h2>
-
-  <p>
-    TODay는 이용자의 개인정보를 원칙적으로 제3자에게 판매하거나
-    제공하지 않습니다.
-  </p>
-
-  <p>
-    다만 광고, 결제 등 서비스 제공을 위해 필요한 경우 관련 서비스
-    제공업체의 시스템을 이용할 수 있으며, 이 경우 해당 업체의
-    개인정보 보호정책이 적용될 수 있습니다.
-  </p>
-
-
-  <h2>9. 개인정보의 보관 및 삭제</h2>
-
-  <p>
-    TODay는 서비스 제공에 필요한 범위에서 정보를 처리하며,
-    이용자가 삭제를 요청하거나 서비스 이용 목적이 달성된 경우
-    관련 법령에서 별도로 보관하도록 요구하는 경우를 제외하고
-    해당 정보를 삭제합니다.
-  </p>
-
-  <p>
-    이용자는 앱에서 제공되는 데이터 삭제 기능을 통해
-    기기에 저장된 서비스 관련 데이터를 삭제할 수 있습니다.
-  </p>
-
-
-  <h2>10. 개인정보 보호를 위한 보안</h2>
-
-  <p>
-    TODay는 개인정보의 안전한 처리를 위해 합리적인 보안 조치를
-    적용하기 위해 노력합니다.
-  </p>
-
-  <p>
-    다만 인터넷 및 전자적 저장 방식의 특성상 모든 보안 위험을
-    완전히 제거할 수 있음을 보장할 수는 없습니다.
-  </p>
-
-
-  <h2>11. 이용자의 권리</h2>
-
-  <p>
-    이용자는 자신의 개인정보 처리와 관련하여 문의하거나
-    개인정보의 삭제 및 처리에 관한 요청을 할 수 있습니다.
-  </p>
-
-  <p>
-    관련 문의는 아래 이메일을 통해 접수할 수 있습니다.
-  </p>
-
-  <div class="info">
-    <strong>개인정보 문의:</strong><br>
-    <a href="mailto:todayofkorea@gmail.com">
-      todayofkorea@gmail.com
-    </a>
-  </div>
-
-
-  <h2>12. 아동의 개인정보</h2>
-
-  <p>
-    TODay는 아동을 대상으로 개인정보를 수집하기 위한 목적으로
-    서비스를 운영하지 않습니다.
-  </p>
-
-  <p>
-    보호자는 아동의 서비스 이용 및 개인정보 처리와 관련하여
-    문의가 필요한 경우 아래 이메일로 연락할 수 있습니다.
-  </p>
-
-
-  <h2>13. 개인정보처리방침의 변경</h2>
-
-  <p>
-    관련 법령, 서비스 내용 또는 개인정보 처리 방식의 변경에 따라
-    본 개인정보처리방침이 변경될 수 있습니다.
-  </p>
-
-  <p>
-    변경사항이 있는 경우 본 페이지를 통해 변경된 내용을
-    확인할 수 있습니다.
-  </p>
-
-
-  <h2>14. 문의처</h2>
-
-  <div class="info">
-    <p><strong>개발자:</strong> TODay</p>
-    <p><strong>앱 이름:</strong> TODay</p>
-    <p>
-      <strong>이메일:</strong>
-      <a href="mailto:todayofkorea@gmail.com">
-        todayofkorea@gmail.com
-      </a>
-    </p>
-  </div>
-
-
-  <div class="notice">
-    <strong>서비스 안내</strong><br>
-    TODay에서 제공하는 사주, 오행, 궁합, 타로 등의 콘텐츠는
-    오락 및 참고 목적으로 제공되며, 의학·법률·금융 등의 전문적인
-    판단이나 미래의 결과를 보장하기 위한 것이 아닙니다.
-  </div>
-
-
-  <footer>
-    <p>© 2026 TODay. All rights reserved.</p>
-    <p>개인정보처리방침 시행일: 2026년 10월 8일</p>
-  </footer>
+    <header>
+        <h1>개인정보처리방침</h1>
+        <p class="subtitle">TODay</p>
+        <p class="last-updated">
+            최종 수정일: 2026년 10월 8일
+        </p>
+    </header>
+
+
+    <section>
+        <h2>1. 개인정보처리방침의 목적</h2>
+
+        <p>
+            TODay(이하 "앱")는 이용자의 개인정보를 중요하게 생각하며,
+            관련 법령과 Google Play 정책에 따라 개인정보가 어떻게
+            처리되는지 투명하게 안내합니다.
+        </p>
+
+        <div class="info-box">
+            <p><strong>앱 이름:</strong> TODay</p>
+            <p><strong>개발자:</strong> TODay</p>
+            <p>
+                <strong>문의 이메일:</strong>
+                <a href="mailto:todayofkorea@gmail.com">
+                    todayofkorea@gmail.com
+                </a>
+            </p>
+            <p><strong>패키지명:</strong> com.TODay</p>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2. 처리하는 정보</h2>
+
+        <p>
+            TODay는 회원가입이나 별도의 계정 생성 없이 사용할 수 있으며,
+            사주 및 관련 기능 제공을 위해 이용자가 직접 입력하는 정보를
+            기기 내에서 처리하고 저장할 수 있습니다.
+        </p>
+
+        <h3>이용자가 직접 입력하는 정보</h3>
+
+        <ul>
+            <li>이름 또는 닉네임</li>
+            <li>생년월일</li>
+            <li>출생시간</li>
+            <li>성별</li>
+            <li>출생지역 또는 출생지역의 경도 정보</li>
+            <li>궁합 기능 이용을 위해 이용자가 직접 입력하는 상대방의 사주 정보</li>
+        </ul>
+
+        <h3>앱 이용 과정에서 기기에 저장될 수 있는 정보</h3>
+
+        <ul>
+            <li>사주 프로필 정보</li>
+            <li>상대방 사주 정보</li>
+            <li>일일 콘텐츠 갱신 상태</li>
+            <li>타로 관련 캐시 또는 이용 상태</li>
+            <li>프리미엄/구독 이용 상태</li>
+            <li>이용자가 생성하거나 저장한 서비스 관련 콘텐츠</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>3. 개인정보의 이용 목적</h2>
+
+        <p>
+            수집 또는 기기 내 저장되는 정보는 다음의 목적에 한하여
+            처리됩니다.
+        </p>
+
+        <ul>
+            <li>만세력 및 사주 원국 계산</li>
+            <li>오늘의 사주 및 조언 제공</li>
+            <li>오행 분석 및 관련 콘텐츠 제공</li>
+            <li>궁합 분석</li>
+            <li>타로 기능 제공</li>
+            <li>서비스 결과 및 콘텐츠 저장</li>
+            <li>이미지 및 콘텐츠 공유 기능 제공</li>
+            <li>광고 제공 및 광고 제거 기능 제공</li>
+            <li>인앱 결제 및 구독 상태 확인</li>
+            <li>앱의 정상적인 운영 및 오류 대응</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>4. 정보의 저장 및 서버 전송</h2>
+
+        <p>
+            사주 프로필 및 상대방 사주 정보 등 앱의 핵심 입력 데이터는
+            앱 기능을 제공하기 위해 이용자의 기기에서 처리·저장되는
+            구조로 운영됩니다.
+        </p>
+
+        <p>
+            앱 자체의 사주 계산 및 핵심 서비스 데이터가 별도의
+            사용자 계정 서버에 저장되는 구조는 사용하지 않습니다.
+        </p>
+
+        <div class="notice">
+            <strong>중요:</strong>
+            광고, 결제 등 제3자 SDK를 통해 처리되는 정보는 해당
+            서비스 제공자의 시스템으로 전송될 수 있으며,
+            이에 대해서는 아래의 관련 내용을 적용합니다.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5. 광고 및 Google Mobile Ads SDK</h2>
+
+        <p>
+            TODay는 무료 이용자에게 광고를 제공하기 위해
+            Google Mobile Ads SDK(AdMob)를 사용할 수 있습니다.
+        </p>
+
+        <p>
+            Google Mobile Ads SDK는 광고 제공, 분석 및 사기 방지 등의
+            목적으로 다음과 같은 정보를 자동으로 수집·공유할 수 있습니다.
+        </p>
+
+        <table class="privacy-table">
+            <thead>
+                <tr>
+                    <th>정보 유형</th>
+                    <th>처리 목적</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IP 주소</td>
+                    <td>광고 제공, 보안 및 대략적인 위치 추정</td>
+                </tr>
+                <tr>
+                    <td>광고 ID 및 기기 식별자</td>
+                    <td>광고 제공, 광고 측정 및 사기 방지</td>
+                </tr>
+                <tr>
+                    <td>앱 이용 상호작용 정보</td>
+                    <td>광고 제공 및 측정</td>
+                </tr>
+                <tr>
+                    <td>진단 및 성능 정보</td>
+                    <td>서비스 및 SDK 성능 개선</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Google Mobile Ads SDK가 처리하는 정보는 Google의 관련
+            개인정보처리방침 및 광고 정책에 따라 처리될 수 있습니다.
+        </p>
+
+        <p>
+            자세한 내용은
+            <a href="https://policies.google.com/privacy"
+               target="_blank"
+               rel="noopener">
+                Google 개인정보처리방침
+            </a>
+            및
+            <a href="https://policies.google.com/technologies/ads"
+               target="_blank"
+               rel="noopener">
+                Google 광고 기술 정책
+            </a>
+            을 확인할 수 있습니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>6. 광고 관련 동의 및 선택</h2>
+
+        <p>
+            관련 법령 및 Google의 광고 개인정보 보호 요구사항에 따라
+            광고 개인정보 보호 및 동의 절차가 제공될 수 있습니다.
+        </p>
+
+        <p>
+            이용자의 광고 개인화 설정은 Android 및 Google에서 제공하는
+            관련 개인정보 보호 설정에 의해 영향을 받을 수 있습니다.
+        </p>
+
+        <p>
+            광고 식별자에 관한 자세한 사항은 Android 기기의
+            개인정보 보호 및 광고 관련 설정에서 확인할 수 있습니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>7. Google Play 결제 및 구독</h2>
+
+        <p>
+            TODay는 Google Play 결제 시스템을 이용하여 유료 기능 또는
+            구독 서비스를 제공할 수 있습니다.
+        </p>
+
+        <p>
+            신용카드 번호 등 결제수단 정보는 TODay가 직접 수집하거나
+            저장하지 않으며, Google Play의 결제 시스템에서 처리됩니다.
+        </p>
+
+        <p>
+            앱에서는 구독 상태 확인 및 구매 복원 등을 위해
+            Google Play Billing 시스템과 연동할 수 있습니다.
+        </p>
+
+        <p>
+            Google Play 결제와 관련한 자세한 내용은
+            <a href="https://support.google.com/googleplay/"
+               target="_blank"
+               rel="noopener">
+                Google Play 고객센터
+            </a>
+            를 확인하시기 바랍니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>8. 개인정보의 제3자 제공 및 공유</h2>
+
+        <p>
+            TODay는 사주 프로필 등 서비스 핵심 정보를 광고 목적의
+            제3자에게 판매하지 않습니다.
+        </p>
+
+        <p>
+            다만 앱에 포함된 제3자 SDK 및 서비스 제공을 위해 필요한
+            범위에서 다음과 같은 처리가 발생할 수 있습니다.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Google Mobile Ads:</strong>
+                광고 제공 및 광고 관련 측정
+            </li>
+            <li>
+                <strong>Google Play Billing:</strong>
+                인앱 결제 및 구독 처리
+            </li>
+        </ul>
+
+        <p>
+            각 서비스에서 처리되는 데이터는 해당 서비스 제공자의
+            개인정보 보호정책이 적용될 수 있습니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>9. 보관 기간 및 삭제</h2>
+
+        <h3>기기 내 저장 데이터</h3>
+
+        <p>
+            사주 프로필, 상대방 사주 정보 및 앱 이용 상태 등은
+            서비스 이용을 위해 필요한 기간 동안 이용자의 기기에
+            저장될 수 있습니다.
+        </p>
+
+        <h3>삭제 방법</h3>
+
+        <ul>
+            <li>
+                앱의 <strong>설정 → 사주 데이터 삭제</strong> 기능을
+                이용하여 앱에 저장된 관련 데이터를 삭제할 수 있습니다.
+            </li>
+            <li>
+                앱을 삭제하면 앱의 로컬 저장 데이터가 삭제될 수 있습니다.
+            </li>
+        </ul>
+
+        <div class="notice">
+            <strong>주의:</strong>
+            이용자가 앱에서 데이터를 삭제한 경우 삭제된 데이터는
+            앱에서 복구할 수 없습니다.
+        </div>
+
+        <p>
+            Google Play 결제 및 구독 관련 정보는 Google Play의
+            시스템 및 관련 정책에 따라 별도로 관리될 수 있습니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>10. 데이터 보안</h2>
+
+        <p>
+            TODay는 이용자의 정보를 안전하게 처리하기 위해
+            합리적인 기술적·관리적 보호조치를 적용하기 위해 노력합니다.
+        </p>
+
+        <p>
+            앱 내부에서 처리되는 데이터는 Android의 보안 기능 및
+            앱의 저장 방식을 이용하여 보호됩니다.
+        </p>
+
+        <p>
+            광고 등 제3자 서비스에서 처리되는 데이터의 전송 및 보안은
+            해당 서비스 제공자의 보안 정책을 따릅니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>11. 이용자의 권리 및 데이터 삭제</h2>
+
+        <p>
+            이용자는 앱에서 자신의 사주 관련 정보를 확인하거나
+            수정하고 삭제할 수 있습니다.
+        </p>
+
+        <ul>
+            <li>저장된 사주 프로필 확인</li>
+            <li>사주 프로필 수정</li>
+            <li>상대방 사주 정보 수정</li>
+            <li>앱 내 사주 데이터 삭제</li>
+            <li>앱 삭제를 통한 로컬 데이터 삭제</li>
+        </ul>
+
+        <p>
+            개인정보 처리와 관련하여 추가적인 문의가 필요한 경우
+            아래 이메일로 요청할 수 있습니다.
+        </p>
+
+        <div class="info-box">
+            <strong>
+                <a href="mailto:todayofkorea@gmail.com">
+                    todayofkorea@gmail.com
+                </a>
+            </strong>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>12. 아동의 개인정보</h2>
+
+        <p>
+            TODay는 아동을 대상으로 개인정보를 수집하기 위한 목적으로
+            운영되는 서비스가 아닙니다.
+        </p>
+
+        <p>
+            보호자가 아동의 개인정보가 앱에 저장된 사실을 확인하고
+            삭제가 필요한 경우 앱의 데이터 삭제 기능을 이용하거나
+            아래 이메일로 문의할 수 있습니다.
+        </p>
+
+        <p>
+            <a href="mailto:todayofkorea@gmail.com">
+                todayofkorea@gmail.com
+            </a>
+        </p>
+    </section>
+
+
+    <section>
+        <h2>13. 개인정보처리방침의 변경</h2>
+
+        <p>
+            관련 법령, Google Play 정책, 앱의 기능 또는 개인정보
+            처리 방식이 변경되는 경우 본 개인정보처리방침을
+            수정할 수 있습니다.
+        </p>
+
+        <p>
+            변경된 내용은 본 페이지에 게시하며,
+            변경된 시행일을 함께 표시합니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>14. 문의처</h2>
+
+        <div class="info-box">
+            <p><strong>개발자:</strong> TODay</p>
+            <p><strong>앱 이름:</strong> TODay</p>
+            <p><strong>패키지명:</strong> com.TODay</p>
+            <p>
+                <strong>개인정보 문의:</strong>
+                <a href="mailto:todayofkorea@gmail.com">
+                    todayofkorea@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <p>
+            개인정보 처리와 관련된 문의, 삭제 요청 및 기타 요청은
+            위 이메일을 통해 접수할 수 있습니다.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>15. 서비스 콘텐츠 안내</h2>
+
+        <p>
+            TODay에서 제공하는 만세력, 사주, 오행, 궁합 및 타로 등의
+            콘텐츠는 오락 및 참고 목적으로 제공됩니다.
+        </p>
+
+        <p>
+            해당 콘텐츠는 의학, 법률, 금융 또는 기타 전문적인 판단을
+            대신하지 않으며 특정 결과나 미래의 사실을 보장하지 않습니다.
+        </p>
+    </section>
+
+
+    <footer>
+        <p>TODay &copy; 2026. All rights reserved.</p>
+        <p>
+            개인정보처리방침 시행일: 2026년 10월 8일
+        </p>
+    </footer>
 
 </div>
 
 </body>
 </html>
+```
